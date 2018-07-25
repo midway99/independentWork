@@ -123,7 +123,7 @@ var_dump($_SESSION);
 // Считайте данные из файла 'test.txt' и выведите их на экран.
 
 $arrayUser = ['name' => 'Your name',
-    'age' => 'Your age'];
+              'age' => 'Your age'];
 $filename = 'test.txt';
 file_put_contents($filename, serialize($arrayUser));
 var_dump(unserialize(file_get_contents($filename)));
